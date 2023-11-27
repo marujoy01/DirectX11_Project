@@ -31,7 +31,7 @@ HRESULT CShader::Initialize_Prototype(const wstring & strShaderFilePath, const D
 	iHlslFlag = D3DCOMPILE_OPTIMIZATION_LEVEL1;
 #endif
 
-	/*strShaderFilePath경로에 작성되어ㅣㅇㅆ는 hlsl언어 번역 빌드하여 ID3DX11Effect라는 녀석을 만들자.  */
+	/*strShaderFilePath경로에 작성되어있는 hlsl언어 번역 빌드하여 ID3DX11Effect라는 녀석을 만들자.  */
 	if (FAILED(D3DX11CompileEffectFromFile(strShaderFilePath.c_str(), nullptr, D3D_COMPILE_STANDARD_FILE_INCLUDE, iHlslFlag, 0, m_pDevice, &m_pEffect, nullptr)))
 		return E_FAIL;
 

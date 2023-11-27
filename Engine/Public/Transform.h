@@ -19,7 +19,7 @@ private:
 
 public:
 	/* 행렬의 행의 정보를 교체한다. */
-	void Set_State(STATE eState, const _float4& vState) {
+	void Set_State(STATE eState, const _float4 & vState) {
 		memcpy(&m_WorldMatrix.m[eState], &vState, sizeof(_float3));
 	}
 	void Set_State(STATE eState, _fvector vState) {
@@ -30,41 +30,46 @@ public:
 	}
 
 	_vector Get_State(STATE eState) {
-		return XMVectorSet(m_WorldMatrix.m[eState][0], 
-			m_WorldMatrix.m[eState][1], 
-			m_WorldMatrix.m[eState][2], 
+		return XMVectorSet(m_WorldMatrix.m[eState][0],
+			m_WorldMatrix.m[eState][1],
+			m_WorldMatrix.m[eState][2],
 			m_WorldMatrix.m[eState][3]);
 	}
 
-	_float3 Get_Scaled() { 
+	_float3 Get_Scaled() {
 		return _float3(XMVectorGetX(XMVector3Length(XMLoadFloat4x4(&m_WorldMatrix).r[STATE_RIGHT])),
 			XMVectorGetX(XMVector3Length(XMLoadFloat4x4(&m_WorldMatrix).r[STATE_UP])),
 			XMVectorGetX(XMVector3Length(XMLoadFloat4x4(&m_WorldMatrix).r[STATE_LOOK])));
 	}
 
+	// Get 월드 행렬 (_matrix)
 	_matrix Get_WorldMatrix() {
 		return XMLoadFloat4x4(&m_WorldMatrix);
 	}
+
+	// Get 월드 행렬 (_float4x4)
 	_float4x4 Get_WorldFloat4x4() {
 		return m_WorldMatrix;
 	}
+
+	// Get 월드 역행렬 (_matrix 뷰 스페이스)
 	_matrix Get_WorldMatrixInverse() {
 		return XMMatrixInverse(nullptr, XMLoadFloat4x4(&m_WorldMatrix));
 	}
+
+	// Get 월드 역행렬 (_float4x4 뷰 스페이스)
 	_float4x4 Get_WorldFloat4x4Inverse() {
 		_float4x4	InverseMatrix;
 		XMStoreFloat4x4(&InverseMatrix, XMMatrixInverse(nullptr, XMLoadFloat4x4(&m_WorldMatrix)));
 		return InverseMatrix;
 	}
 
-	
-
 	void Set_Scaling(_float fScaleX, _float fScaleY, _float fScaleZ);
-	
+
 
 
 public:
-	virtual HRESULT Initialize_Prototype(_float fSpeedPerSec, _float fRotationPerSec);	
+	virtual HRESULT Initialize_Prototype(_float fSpeedPerSec, _float fRotationPerSec);
 
 public:
 
@@ -79,8 +84,8 @@ public:
 	void Look_At_OnLand(_fvector vTargetPos);
 
 public:
-	HRESULT  Bind_ShaderResource(class CShader* pShader, const _char* pConstantName);
-	
+	HRESULT  Bind_ShaderResource(class CShader* pShader, const _char * pConstantName);
+
 
 private:
 	_float				m_fSpeedPerSec = { 0.0f };
@@ -90,7 +95,7 @@ private:
 
 
 public:
-	static CTransform* Create(ID3D11Device* pDevice, ID3D11DeviceContext* pContext, _float fSpeedPerSec, _float fRotationPerSec);
+	static CTransform* Create(ID3D11Device * pDevice, ID3D11DeviceContext * pContext, _float fSpeedPerSec, _float fRotationPerSec);
 	virtual CComponent* Clone(void* pArg) override;
 	virtual void Free() override;
 };

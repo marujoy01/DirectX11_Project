@@ -20,38 +20,38 @@ private:
 	CGameInstance();
 	virtual ~CGameInstance() = default;
 
-public: /* For.Engine */
+public: /* For.Engine(엔진) */
 	/* 엔진라이브러리를 사용하기위한 준비를 모두 거친다. */
 	HRESULT Initialize_Engine(_uint iNumLevels, const GRAPHIC_DESC& GraphicDesc, _Inout_ ID3D11Device** ppDevice, _Inout_ ID3D11DeviceContext** ppContext);
 	void Tick_Engine(_float fTimeDelta);
 	HRESULT  Render_Engine();
 	void Clear(_uint iLevelIndex);
 
-public: /* For.Graphic_Device */		
+public: /* For.Graphic_Device(그래픽 디바이스) */	
 	HRESULT Clear_BackBuffer_View(_float4 vClearColor);
 	HRESULT Clear_DepthStencil_View();	
 	HRESULT Present();
 
-public: /* For.Timer_Manager */
+public: /* For.Timer_Manager(타임 매니저) */
 	HRESULT	Add_Timer(const wstring& strTimeTag);
 	_float Compute_TimeDelta(const wstring& strTimeTag);
 
-public: /* For.Level_Manager */
+public: /* For.Level_Manager(레벨[씬] 매니저) */
 	HRESULT Open_Level(_uint iCurrentLevelIndex, class CLevel* pNewLevel);
 
-public: /* For.Object_Manager */
+public: /* For.Object_Manager(오브젝트 매니저) */
 	HRESULT Add_Prototype(const wstring& strPrototypeTag, class CGameObject* pPrototype);
 	HRESULT Add_CloneObject(_uint iLevelIndex, const wstring& strLayerTag, const wstring& strPrototypeTag, void* pArg = nullptr);
 
-public: /* For.Component_Manager */
+public: /* For.Component_Manager(컴포넌트 매니저) */
 	HRESULT Add_Prototype(_uint iLevelIndex, const wstring& strPrototypeTag, class CComponent* pPrototype);
 	class CComponent* Clone_Component(_uint iLevelIndex, const wstring& strPrototypeTag, void* pArg = nullptr);
 
 
-public: /* For.Renderer */
+public: /* For.Renderer(랜더[그룹]) */
 	HRESULT Add_RenderGroup(CRenderer::RENDERGROUP eGroupID, class CGameObject* pGameObject);
 
-public: /* For.PipeLine */
+public: /* For.PipeLine(파이프라인[행렬 저장 및 가져오기]) */
 	void Set_Transform(CPipeLine::D3DTRANSFORMSTATE eState, _fmatrix TransformMatrix);
 	void Set_Transform(CPipeLine::D3DTRANSFORMSTATE eState, _float4x4 TransformMatrix);
 	_matrix Get_TransformMatrix(CPipeLine::D3DTRANSFORMSTATE eState);
