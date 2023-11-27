@@ -71,17 +71,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>..\Bin\Intermediate\$(Configuration)\$(PlatformTarget)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>..\Bin\</OutDir>
+    <OutDir>..\Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>..\Bin\Intermediate\$(Configuration)\$(PlatformTarget)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>..\Bin\Intermediate\$(Configuration)\$(PlatformTarget)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\Bin\</OutDir>
+    <OutDir>..\Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>..\Bin\Intermediate\$(Configuration)\$(PlatformTarget)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -96,6 +102,13 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>attrib -r "$(SolutionDir)Reference\Public\*.*" /s
+xcopy "$(SolutionDir)Engine\Public\*.*"    "$(SolutionDir)Reference\Public\" /y /e
+attrib +r "$(SolutionDir)Reference\Public\*.*" /s
+xcopy "$(OutDir)$(ProjectName).lib" "$(SolutionDir)Reference\Librarys\" /y
+xcopy "$(OutDir)$(ProjectName).dll" "$(SolutionDir)Client\Bin\\$(Configuration)\$(PlatformTarget)\" /y</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -113,6 +126,13 @@
       <AdditionalDependencies>d3d11.lib;Effects11d.lib;DirectXTKd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>../ThirdPartyLib/</AdditionalLibraryDirectories>
     </Link>
+    <PostBuildEvent>
+      <Command>attrib -r "$(SolutionDir)Reference\Public\*.*" /s
+xcopy "$(SolutionDir)Engine\Public\*.*"    "$(SolutionDir)Reference\Public\" /y /e
+attrib +r "$(SolutionDir)Reference\Public\*.*" /s
+xcopy "$(OutDir)$(ProjectName).lib" "$(SolutionDir)Reference\Librarys\" /y
+xcopy "$(OutDir)$(ProjectName).dll" "$(SolutionDir)Client\Bin\\$(Configuration)\$(PlatformTarget)\" /y</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -131,6 +151,13 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>attrib -r "$(SolutionDir)Reference\Public\*.*" /s
+xcopy "$(SolutionDir)Engine\Public\*.*"    "$(SolutionDir)Reference\Public\" /y /e
+attrib +r "$(SolutionDir)Reference\Public\*.*" /s
+xcopy "$(OutDir)$(ProjectName).lib" "$(SolutionDir)Reference\Librarys\" /y
+xcopy "$(OutDir)$(ProjectName).dll" "$(SolutionDir)Client\Bin\\$(Configuration)\$(PlatformTarget)\" /y</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -152,6 +179,13 @@
       <AdditionalDependencies>d3d11.lib;Effects11.lib;DirectXTK.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>../ThirdPartyLib/</AdditionalLibraryDirectories>
     </Link>
+    <PostBuildEvent>
+      <Command>attrib -r "$(SolutionDir)Reference\Public\*.*" /s
+xcopy "$(SolutionDir)Engine\Public\*.*"    "$(SolutionDir)Reference\Public\" /y /e
+attrib +r "$(SolutionDir)Reference\Public\*.*" /s
+xcopy "$(OutDir)$(ProjectName).lib" "$(SolutionDir)Reference\Librarys\" /y
+xcopy "$(OutDir)$(ProjectName).dll" "$(SolutionDir)Client\Bin\\$(Configuration)\$(PlatformTarget)\" /y</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\public\Base.h" />

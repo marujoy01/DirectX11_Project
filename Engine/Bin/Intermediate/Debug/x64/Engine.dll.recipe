@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>E:\3D_Project\Engine\Bin\Debug\x64\Engine.dll</FullPath>
+      <FullPath>E:\DirectX11_Project\Engine\Bin\Debug\x64\Engine.dll</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

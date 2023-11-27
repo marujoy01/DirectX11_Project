@@ -1,62 +1,95 @@
-﻿  unity_8LA3KEOTSUHP0N1I.cpp
-E:\3D_Project\Engine\private\Shader.cpp(46,59): warning C4267: '인수': 'size_t'에서 'uint32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-E:\3D_Project\Engine\private\Transform.cpp(30,12): warning C4101: 'matTmp' :참조되지 않은 지역 변수입니다.
-E:\3D_Project\Engine\Private\VIBuffer_Terrain.cpp(55,43): warning C4267: '초기화 중': 'size_t'에서 'Engine::_uint'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-E:\3D_Project\Engine\Private\VIBuffer_Terrain.cpp(63,83): warning C4244: '인수': 'size_t'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-E:\3D_Project\Engine\Private\VIBuffer_Terrain.cpp(63,42): warning C4244: '인수': 'size_t'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-E:\3D_Project\Engine\Private\VIBuffer_Terrain.cpp(85,43): warning C4267: '초기화 중': 'size_t'에서 'Engine::_uint'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  Base.cpp
+  Camera.cpp
+  Component.cpp
+  Component_Manager.cpp
+  GameInstance.cpp
+  GameObject.cpp
+  Graphic_Device.cpp
+  Layer.cpp
+  Level.cpp
+  Level_Manager.cpp
+  Object_Manager.cpp
+  PipeLine.cpp
+  Renderer.cpp
+  Shader.cpp
+E:\DirectX11_Project\Engine\private\Shader.cpp(46,59): warning C4267: '인수': 'size_t'에서 'uint32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Texture.cpp
+  Timer.cpp
+  Timer_Manager.cpp
+  Transform.cpp
+E:\DirectX11_Project\Engine\private\Transform.cpp(30,12): warning C4101: 'matTmp' :참조되지 않은 지역 변수입니다.
+  VIBuffer.cpp
+  VIBuffer_Rect.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  VIBuffer_Terrain.cpp
+E:\DirectX11_Project\Engine\Private\VIBuffer_Terrain.cpp(55,43): warning C4267: '초기화 중': 'size_t'에서 'Engine::_uint'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\DirectX11_Project\Engine\Private\VIBuffer_Terrain.cpp(63,83): warning C4244: '인수': 'size_t'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\DirectX11_Project\Engine\Private\VIBuffer_Terrain.cpp(63,42): warning C4244: '인수': 'size_t'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\DirectX11_Project\Engine\Private\VIBuffer_Terrain.cpp(85,43): warning C4267: '초기화 중': 'size_t'에서 'Engine::_uint'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Engine_Struct.cpp
+  코드를 생성하고 있습니다...
      ..\Bin\Debug\x64\Engine.lib 라이브러리 및 ..\Bin\Debug\x64\Engine.exp 개체를 생성하고 있습니다.
-  Engine.vcxproj -> E:\3D_Project\Engine\Bin\Debug\x64\Engine.dll
-  E:\3D_Project\Engine\Public\Base.h
-  E:\3D_Project\Engine\Public\Camera.h
-  E:\3D_Project\Engine\Public\Component.h
-  E:\3D_Project\Engine\Public\Component_Manager.h
-  E:\3D_Project\Engine\Public\Engine_Defines.h
-  E:\3D_Project\Engine\Public\Engine_Function.h
-  E:\3D_Project\Engine\Public\Engine_Macro.h
-  E:\3D_Project\Engine\Public\Engine_Struct.cpp
-  E:\3D_Project\Engine\Public\Engine_Struct.h
-  E:\3D_Project\Engine\Public\Engine_Typedef.h
-  E:\3D_Project\Engine\Public\GameInstance.h
-  E:\3D_Project\Engine\Public\GameObject.h
-  E:\3D_Project\Engine\Public\Graphic_Device.h
-  E:\3D_Project\Engine\Public\Layer.h
-  E:\3D_Project\Engine\Public\Level.h
-  E:\3D_Project\Engine\Public\Level_Manager.h
-  E:\3D_Project\Engine\Public\Object_Manager.h
-  E:\3D_Project\Engine\Public\PipeLine.h
-  E:\3D_Project\Engine\Public\Renderer.h
-  E:\3D_Project\Engine\Public\Shader.h
-  E:\3D_Project\Engine\Public\Texture.h
-  E:\3D_Project\Engine\Public\Timer.h
-  E:\3D_Project\Engine\Public\Timer_Manager.h
-  E:\3D_Project\Engine\Public\Transform.h
-  E:\3D_Project\Engine\Public\VIBuffer.h
-  E:\3D_Project\Engine\Public\VIBuffer_Rect.h
-  E:\3D_Project\Engine\Public\VIBuffer_Terrain.h
-  E:\3D_Project\Engine\Public\DirectXTK\Audio.h
-  E:\3D_Project\Engine\Public\DirectXTK\CommonStates.h
-  E:\3D_Project\Engine\Public\DirectXTK\DDSTextureLoader.h
-  E:\3D_Project\Engine\Public\DirectXTK\DirectXHelpers.h
-  E:\3D_Project\Engine\Public\DirectXTK\Effects.h
-  E:\3D_Project\Engine\Public\DirectXTK\GamePad.h
-  E:\3D_Project\Engine\Public\DirectXTK\GeometricPrimitive.h
-  E:\3D_Project\Engine\Public\DirectXTK\GraphicsMemory.h
-  E:\3D_Project\Engine\Public\DirectXTK\Keyboard.h
-  E:\3D_Project\Engine\Public\DirectXTK\Model.h
-  E:\3D_Project\Engine\Public\DirectXTK\Mouse.h
-  E:\3D_Project\Engine\Public\DirectXTK\PostProcess.h
-  E:\3D_Project\Engine\Public\DirectXTK\PrimitiveBatch.h
-  E:\3D_Project\Engine\Public\DirectXTK\ScreenGrab.h
-  E:\3D_Project\Engine\Public\DirectXTK\SimpleMath.h
-  E:\3D_Project\Engine\Public\DirectXTK\SimpleMath.inl
-  E:\3D_Project\Engine\Public\DirectXTK\SpriteBatch.h
-  E:\3D_Project\Engine\Public\DirectXTK\SpriteFont.h
-  E:\3D_Project\Engine\Public\DirectXTK\VertexTypes.h
-  E:\3D_Project\Engine\Public\DirectXTK\WICTextureLoader.h
-  E:\3D_Project\Engine\Public\DirectXTK\XboxDDSTextureLoader.h
-  E:\3D_Project\Engine\Public\Effects11\d3dx11effect.h
-  E:\3D_Project\Engine\Public\Effects11\d3dxGlobal.h
+Effects11d.lib(d3dxGlobal.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(d3dxGlobal.obj)' 또는 'E:\DirectX11_Project\Engine\Bin\Debug\x64\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11d.lib(EffectAPI.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(EffectAPI.obj)' 또는 'E:\DirectX11_Project\Engine\Bin\Debug\x64\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11d.lib(EffectLoad.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(EffectLoad.obj)' 또는 'E:\DirectX11_Project\Engine\Bin\Debug\x64\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11d.lib(EffectNonRuntime.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(EffectNonRuntime.obj)' 또는 'E:\DirectX11_Project\Engine\Bin\Debug\x64\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11d.lib(EffectReflection.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(EffectReflection.obj)' 또는 'E:\DirectX11_Project\Engine\Bin\Debug\x64\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+Effects11d.lib(EffectRuntime.obj) : warning LNK4099: 'Effects11d.pdb' PDB를 'Effects11d.lib(EffectRuntime.obj)' 또는 'E:\DirectX11_Project\Engine\Bin\Debug\x64\Effects11d.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTKd.lib(DDSTextureLoader.obj) : warning LNK4099: 'DirectXTK.pdb' PDB를 'DirectXTKd.lib(DDSTextureLoader.obj)' 또는 'E:\DirectX11_Project\Engine\Bin\Debug\x64\DirectXTK.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTKd.lib(pch.obj) : warning LNK4099: 'DirectXTK.pdb' PDB를 'DirectXTKd.lib(pch.obj)' 또는 'E:\DirectX11_Project\Engine\Bin\Debug\x64\DirectXTK.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+DirectXTKd.lib(WICTextureLoader.obj) : warning LNK4099: 'DirectXTK.pdb' PDB를 'DirectXTKd.lib(WICTextureLoader.obj)' 또는 'E:\DirectX11_Project\Engine\Bin\Debug\x64\DirectXTK.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+  Engine.vcxproj -> E:\DirectX11_Project\Engine\Bin\Debug\x64\Engine.dll
+  E:\DirectX11_Project\Engine\Public\Base.h
+  E:\DirectX11_Project\Engine\Public\Camera.h
+  E:\DirectX11_Project\Engine\Public\Component.h
+  E:\DirectX11_Project\Engine\Public\Component_Manager.h
+  E:\DirectX11_Project\Engine\Public\Engine_Defines.h
+  E:\DirectX11_Project\Engine\Public\Engine_Function.h
+  E:\DirectX11_Project\Engine\Public\Engine_Macro.h
+  E:\DirectX11_Project\Engine\Public\Engine_Struct.cpp
+  E:\DirectX11_Project\Engine\Public\Engine_Struct.h
+  E:\DirectX11_Project\Engine\Public\Engine_Typedef.h
+  E:\DirectX11_Project\Engine\Public\GameInstance.h
+  E:\DirectX11_Project\Engine\Public\GameObject.h
+  E:\DirectX11_Project\Engine\Public\Graphic_Device.h
+  E:\DirectX11_Project\Engine\Public\Layer.h
+  E:\DirectX11_Project\Engine\Public\Level.h
+  E:\DirectX11_Project\Engine\Public\Level_Manager.h
+  E:\DirectX11_Project\Engine\Public\Object_Manager.h
+  E:\DirectX11_Project\Engine\Public\PipeLine.h
+  E:\DirectX11_Project\Engine\Public\Renderer.h
+  E:\DirectX11_Project\Engine\Public\Shader.h
+  E:\DirectX11_Project\Engine\Public\Texture.h
+  E:\DirectX11_Project\Engine\Public\Timer.h
+  E:\DirectX11_Project\Engine\Public\Timer_Manager.h
+  E:\DirectX11_Project\Engine\Public\Transform.h
+  E:\DirectX11_Project\Engine\Public\VIBuffer.h
+  E:\DirectX11_Project\Engine\Public\VIBuffer_Rect.h
+  E:\DirectX11_Project\Engine\Public\VIBuffer_Terrain.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\Audio.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\CommonStates.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\DDSTextureLoader.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\DirectXHelpers.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\Effects.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\GamePad.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\GeometricPrimitive.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\GraphicsMemory.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\Keyboard.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\Model.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\Mouse.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\PostProcess.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\PrimitiveBatch.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\ScreenGrab.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\SimpleMath.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\SimpleMath.inl
+  E:\DirectX11_Project\Engine\Public\DirectXTK\SpriteBatch.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\SpriteFont.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\VertexTypes.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\WICTextureLoader.h
+  E:\DirectX11_Project\Engine\Public\DirectXTK\XboxDDSTextureLoader.h
+  E:\DirectX11_Project\Engine\Public\Effects11\d3dx11effect.h
+  E:\DirectX11_Project\Engine\Public\Effects11\d3dxGlobal.h
   50개 파일이 복사되었습니다.
   ..\Bin\Debug\x64\Engine.lib
   1개 파일이 복사되었습니다.

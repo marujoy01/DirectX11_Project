@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>E:\3D_Project\Client\Bin\Debug\x64\Client.exe</FullPath>
+      <FullPath>E:\DirectX11_Project\Client\Bin\Debug\x64\Client.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

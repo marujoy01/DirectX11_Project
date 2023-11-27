@@ -1,12 +1,12 @@
 ﻿  stdafx.cpp
-  Level_GamePlay.cpp
-  Level_Loading.cpp
-  Terrain.cpp
   BackGround.cpp
   Camera_Dynamic.cpp
+  Level_GamePlay.cpp
+  Level_Loading.cpp
   Level_Logo.cpp
   Loader.cpp
   MainApp.cpp
+  Terrain.cpp
   Client.cpp
   코드를 생성하고 있습니다...
-  Client.vcxproj -> E:\3D_Project\Client\Bin\Debug\x64\Client.exe
+  Client.vcxproj -> E:\DirectX11_Project\Client\Bin\Debug\x64\Client.exe
