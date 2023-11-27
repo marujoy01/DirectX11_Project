@@ -1,0 +1,64 @@
+﻿  unity_8LA3KEOTSUHP0N1I.cpp
+E:\3D_Project\Engine\private\Shader.cpp(46,59): warning C4267: '인수': 'size_t'에서 'uint32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\3D_Project\Engine\private\Transform.cpp(30,12): warning C4101: 'matTmp' :참조되지 않은 지역 변수입니다.
+E:\3D_Project\Engine\Private\VIBuffer_Terrain.cpp(55,43): warning C4267: '초기화 중': 'size_t'에서 'Engine::_uint'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\3D_Project\Engine\Private\VIBuffer_Terrain.cpp(63,83): warning C4244: '인수': 'size_t'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\3D_Project\Engine\Private\VIBuffer_Terrain.cpp(63,42): warning C4244: '인수': 'size_t'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+E:\3D_Project\Engine\Private\VIBuffer_Terrain.cpp(85,43): warning C4267: '초기화 중': 'size_t'에서 'Engine::_uint'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     ..\Bin\Debug\x64\Engine.lib 라이브러리 및 ..\Bin\Debug\x64\Engine.exp 개체를 생성하고 있습니다.
+  Engine.vcxproj -> E:\3D_Project\Engine\Bin\Debug\x64\Engine.dll
+  E:\3D_Project\Engine\Public\Base.h
+  E:\3D_Project\Engine\Public\Camera.h
+  E:\3D_Project\Engine\Public\Component.h
+  E:\3D_Project\Engine\Public\Component_Manager.h
+  E:\3D_Project\Engine\Public\Engine_Defines.h
+  E:\3D_Project\Engine\Public\Engine_Function.h
+  E:\3D_Project\Engine\Public\Engine_Macro.h
+  E:\3D_Project\Engine\Public\Engine_Struct.cpp
+  E:\3D_Project\Engine\Public\Engine_Struct.h
+  E:\3D_Project\Engine\Public\Engine_Typedef.h
+  E:\3D_Project\Engine\Public\GameInstance.h
+  E:\3D_Project\Engine\Public\GameObject.h
+  E:\3D_Project\Engine\Public\Graphic_Device.h
+  E:\3D_Project\Engine\Public\Layer.h
+  E:\3D_Project\Engine\Public\Level.h
+  E:\3D_Project\Engine\Public\Level_Manager.h
+  E:\3D_Project\Engine\Public\Object_Manager.h
+  E:\3D_Project\Engine\Public\PipeLine.h
+  E:\3D_Project\Engine\Public\Renderer.h
+  E:\3D_Project\Engine\Public\Shader.h
+  E:\3D_Project\Engine\Public\Texture.h
+  E:\3D_Project\Engine\Public\Timer.h
+  E:\3D_Project\Engine\Public\Timer_Manager.h
+  E:\3D_Project\Engine\Public\Transform.h
+  E:\3D_Project\Engine\Public\VIBuffer.h
+  E:\3D_Project\Engine\Public\VIBuffer_Rect.h
+  E:\3D_Project\Engine\Public\VIBuffer_Terrain.h
+  E:\3D_Project\Engine\Public\DirectXTK\Audio.h
+  E:\3D_Project\Engine\Public\DirectXTK\CommonStates.h
+  E:\3D_Project\Engine\Public\DirectXTK\DDSTextureLoader.h
+  E:\3D_Project\Engine\Public\DirectXTK\DirectXHelpers.h
+  E:\3D_Project\Engine\Public\DirectXTK\Effects.h
+  E:\3D_Project\Engine\Public\DirectXTK\GamePad.h
+  E:\3D_Project\Engine\Public\DirectXTK\GeometricPrimitive.h
+  E:\3D_Project\Engine\Public\DirectXTK\GraphicsMemory.h
+  E:\3D_Project\Engine\Public\DirectXTK\Keyboard.h
+  E:\3D_Project\Engine\Public\DirectXTK\Model.h
+  E:\3D_Project\Engine\Public\DirectXTK\Mouse.h
+  E:\3D_Project\Engine\Public\DirectXTK\PostProcess.h
+  E:\3D_Project\Engine\Public\DirectXTK\PrimitiveBatch.h
+  E:\3D_Project\Engine\Public\DirectXTK\ScreenGrab.h
+  E:\3D_Project\Engine\Public\DirectXTK\SimpleMath.h
+  E:\3D_Project\Engine\Public\DirectXTK\SimpleMath.inl
+  E:\3D_Project\Engine\Public\DirectXTK\SpriteBatch.h
+  E:\3D_Project\Engine\Public\DirectXTK\SpriteFont.h
+  E:\3D_Project\Engine\Public\DirectXTK\VertexTypes.h
+  E:\3D_Project\Engine\Public\DirectXTK\WICTextureLoader.h
+  E:\3D_Project\Engine\Public\DirectXTK\XboxDDSTextureLoader.h
+  E:\3D_Project\Engine\Public\Effects11\d3dx11effect.h
+  E:\3D_Project\Engine\Public\Effects11\d3dxGlobal.h
+  50개 파일이 복사되었습니다.
+  ..\Bin\Debug\x64\Engine.lib
+  1개 파일이 복사되었습니다.
+  ..\Bin\Debug\x64\Engine.dll
+  1개 파일이 복사되었습니다.
